@@ -4,7 +4,7 @@ export default function App() {
   const [price, setPrice] = useState('Loading...');
 
   useEffect(() => {
-    fetch('YOUR_RAILWAY_URL')
+    fetch('https://alphanode-production.up.railway.app')
       .then(res => res.json())
       .then(data => {
         setPrice(data.live?.price || 'No Data');
